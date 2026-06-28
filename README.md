@@ -29,15 +29,43 @@ The application analyses two kinds of data, **both included in a single dataset 
 2. **Reference Scores** (`DataSets/Results_Cities.csv`): Reference graph metrics and official UMRi / SMi / PTi scores used to train the prediction model and to draw the comparison charts.
 
 
-## Requirements
+## Getting Started
 
+### Prerequisites
 - **Java 17+** (the project compiles with `release 21` by default; Java 17 is supported via the `prod` Maven profile)
 - **Maven 3.6+**
-- Internet access for World Bank Data360 and Gemini (optional for offline use of already-cached or local-only features)
+- Internet access for the World Bank Data360 API and Gemini (optional — already-cached and local-only features work offline)
 
-## Quick start
+### 1. Clone the repository
 
-### Build
+```bash
+git clone https://github.com/bughi04/ProcurementAnalysisApp.git
+cd ProcurementAnalysisApp
+```
+
+### 2. Download the dataset
+
+The GraphML networks and the reference CSV are **not bundled in the repository** and must be downloaded from Mendeley Data:
+
+**➡️ https://data.mendeley.com/datasets/gmyt9wrgst/1**
+
+After downloading and unzipping, place the files so the project root looks like this:
+
+```
+ProcurementAnalysisApp/
+├── pom.xml
+├── DataSets/
+│   ├── Graphs/
+│   │   ├── Amsterdam,_Netherlands.graphml
+│   │   ├── Barcelona,_Spain.graphml
+│   │   └── ... (62 city files)
+│   └── Results_Cities.csv
+└── src/
+```
+
+> **Important**: The app looks for `DataSets/Graphs/` and `DataSets/Results_Cities.csv` relative to the directory you run it from. Keep the `DataSets/` folder in the project root (or launch from there) so cities and prediction/charts load automatically.
+
+### 3. Build
 
 ```bash
 mvn clean package
@@ -49,7 +77,7 @@ This produces a runnable fat JAR:
 target/network-analysis-tool.jar
 ```
 
-### Run the GUI
+### 4. Run the GUI
 
 ```bash
 java -jar target/network-analysis-tool.jar
@@ -61,11 +89,11 @@ Or without packaging:
 mvn exec:java
 ```
 
-On first launch, open the **Files** tab, click **Browse Folder**, and point to a directory of `.graphml` files (sample data is in `DataSets/Graphs/`). Select cities and click **Process Selected**.
+On first launch, open the **Files** tab, click **Browse Folder**, and point to `DataSets/Graphs/`. Select cities, choose **Quick** or **Full** analysis, and click **Process Selected**.
 
-### Run the CLI
+### 5. Run from the command line (optional)
 
-Process a single file (Quick analysis, exports `*_all_metrics.csv` next to the input):
+Process a single file (Quick analysis; exports `*_all_metrics.csv` next to the input):
 
 ```bash
 java -jar target/network-analysis-tool.jar DataSets/Graphs/Barcelona,_Spain.graphml
@@ -83,13 +111,24 @@ Full analysis (exact centrality; can be very slow on large cities):
 java -jar target/network-analysis-tool.jar --full DataSets/Graphs/Amsterdam,_Netherlands.graphml
 ```
 
-### Run tests
+### 6. Run tests
 
 ```bash
 mvn test
 ```
 
-Some prediction tests require `DataSets/Results_Cities.csv` in the project root.
+Some prediction and round-trip tests require `DataSets/Results_Cities.csv` in the project root.
+
+## Usage Workflow
+
+1. **Download Data**: Get the dataset from Mendeley and place it under `DataSets/`
+2. **Load**: Open the **Files** tab, browse to `DataSets/Graphs/`, and process selected cities
+3. **Explore**: Inspect the **Dashboard** KPIs and the interactive **Map**
+4. **Analyse**: Generate **Charts** and read the written **Analysis** report
+5. **Enrich**: Pull country indicators in the **World Bank** tab
+6. **Predict**: View UMRi / SMi / PTi estimates in the **Prediction** tab
+7. **Query**: Ask the **AI Advisor** questions about your loaded cities (optional Gemini key)
+8. **Export**: Save all computed values from the **Results** tab to CSV
 
 ## Sample data
 
