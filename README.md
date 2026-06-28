@@ -13,7 +13,7 @@ The app runs as a **Swing GUI** (default) or a **command-line batch tool** for s
 | **Map** | Interactive street map coloured by OSM tags (highway type, speed, one-way, bridges/tunnels) |
 | **Charts** | Side-by-side bar charts for street and network metrics; generate from the Charts tab |
 | **World Bank** | Country-level socioeconomic indicators via the [Data360 API](https://data360.worldbank.org/) |
-| **Prediction** | UMRi / SMi / PTi estimates from network structure (trained on 62 reference cities) |
+| **Prediction** | UMRi estimate from network structure (trained on 62 reference cities) |
 | **Analysis** | Full written comparative report with research context |
 | **AI Advisor** | Gemini-powered Q&A about your loaded cities (optional API key) |
 | **Data Guide** | Plain-language explanation of OSM tags, metrics, and the full metrics table |
