@@ -1,6 +1,6 @@
 # Extracting information from open data
 
-A desktop application for analysing urban street networks from **OpenStreetMap (OSM) GraphML** files. Load city networks, compute graph and street-level metrics, compare cities visually, enrich results with **World Bank** indicators, estimate **urban mobility readiness (UMRi)**, and explore findings through reports, charts, and an optional **Google Gemini** AI advisor.
+A Java desktop application for analysing **urban street networks** from OpenStreetMap **GraphML** files. Load city networks, compute graph- and street-level metrics, compare cities visually, enrich results with **World Bank** indicators, estimate **Urban Mobility Readiness (UMRi)**, and explore findings through reports, charts, and an optional **Google Gemini** AI advisor.
 
 The app runs as a **Swing GUI** (default) or a **command-line batch tool** for scripted exports.
 
