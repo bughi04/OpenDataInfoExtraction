@@ -92,6 +92,14 @@ mvn exec:java
 
 On first launch, open the **Files** tab, click **Browse Folder**, and point to `DataSets/Graphs/`. Select cities, choose **Quick** or **Full** analysis, and click **Process Selected**.
 
+### Gemini API (optional)
+
+1. Get a key from [Google AI Studio](https://aistudio.google.com/apikey).
+2. In the app: **AI Advisor** tab - **Gemini Settings**.
+3. Or set environment variables (these override the properties file):
+   - `GEMINI_API_KEY` or `GOOGLE_API_KEY`
+   - `GEMINI_MODEL` (default: `gemini-3.1-flash-lite`)
+
 ### 5. Run from the command line (optional)
 
 Process a single file (Quick analysis; exports `*_all_metrics.csv` next to the input):
@@ -162,14 +170,6 @@ All persistent app data lives under:
 ├── gemini.properties     # Gemini API key and model (if configured in the UI)
 └── data360-cache/        # Cached World Bank API responses (one JSON file per indicator)
 ```
-
-### Gemini API (optional)
-
-1. Get a key from [Google AI Studio](https://aistudio.google.com/apikey).
-2. In the app: **AI Advisor** tab - **Gemini Settings**.
-3. Or set environment variables (these override the properties file):
-   - `GEMINI_API_KEY` or `GOOGLE_API_KEY`
-   - `GEMINI_MODEL` (default: `gemini-3.1-flash-lite`)
 
 ### World Bank offline mode
 
