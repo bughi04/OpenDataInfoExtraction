@@ -21,6 +21,14 @@ The app runs as a **Swing GUI** (default) or a **command-line batch tool** for s
 
 **Session persistence:** processed metrics, UI state, analysis text, and chat history are saved automatically and restored on the next launch.
 
+## Data Files
+
+The application analyses two kinds of data, **both included in a single dataset that must be downloaded separately** (see below):
+
+1. **City Street Networks** (`DataSets/Graphs/*.graphml`): 62 world-city OpenStreetMap street networks in GraphML format, named `City,_Country.graphml` (underscores instead of spaces).
+2. **Reference Scores** (`DataSets/Results_Cities.csv`): Reference graph metrics and official UMRi / SMi / PTi scores used to train the prediction model and to draw the comparison charts.
+
+
 ## Requirements
 
 - **Java 17+** (the project compiles with `release 21` by default; Java 17 is supported via the `prod` Maven profile)
