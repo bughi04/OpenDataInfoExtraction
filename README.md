@@ -34,7 +34,7 @@ The application analyses two kinds of data, **both included in a single dataset 
 ### Prerequisites
 - **Java 17+** (the project compiles with `release 21` by default; Java 17 is supported via the `prod` Maven profile)
 - **Maven 3.6+**
-- Internet access for the World Bank Data360 API and Gemini (optional — already-cached and local-only features work offline)
+- Internet access for the World Bank Data360 API and Gemini (optional, already-cached and local-only features work offline)
 
 ### 1. Clone the repository
 
