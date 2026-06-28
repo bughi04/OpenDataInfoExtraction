@@ -135,7 +135,7 @@ Some prediction and round-trip tests require `DataSets/Results_Cities.csv` in th
 3. **Explore**: Inspect the **Dashboard** KPIs and the interactive **Map**
 4. **Analyse**: Generate **Charts** and read the written **Analysis** report
 5. **Enrich**: Pull country indicators in the **World Bank** tab
-6. **Predict**: View UMRi / SMi / PTi estimates in the **Prediction** tab
+6. **Predict**: View the UMRi estimate in the **Prediction** tab
 7. **Query**: Ask the **AI Advisor** questions about your loaded cities (optional Gemini key)
 8. **Export**: Save all computed values from the **Results** tab to CSV
 
