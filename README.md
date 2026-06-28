@@ -48,7 +48,7 @@ cd OpenDataInfoExtraction
 
 The GraphML networks and the reference CSV are **not bundled in the repository** and must be downloaded from Mendeley Data:
 
-**➡️ https://data.mendeley.com/datasets/gmyt9wrgst/1**
+**https://data.mendeley.com/datasets/gmyt9wrgst/1**
 
 After downloading and unzipping, place the files so the project root looks like this:
 
@@ -72,7 +72,7 @@ ProcurementAnalysisApp/
 mvn clean package
 ```
 
-This produces a runnable fat JAR:
+This produces a runnable JAR:
 
 ```
 target/network-analysis-tool.jar
