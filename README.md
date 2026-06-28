@@ -209,4 +209,4 @@ See the in-app **Data Guide** tab for column-by-column explanations of the full 
 
 - Street network data: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) (typically extracted via OSMnx into GraphML)
 - World Bank indicators: [Data360 API](https://data360.worldbank.org/)
-- UMRi reference scores: Oliver Wyman Forum (2023), via `Results_Cities.csv`
+- UMRi reference scores: Oliver Wyman Forum (2024), via `Results_Cities.csv`
