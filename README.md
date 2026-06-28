@@ -139,15 +139,6 @@ Some prediction and round-trip tests require `DataSets/Results_Cities.csv` in th
 7. **Query**: Ask the **AI Advisor** questions about your loaded cities (optional Gemini key)
 8. **Export**: Save all computed values from the **Results** tab to CSV
 
-## Sample data
-
-| Path | Purpose |
-|------|---------|
-| `DataSets/Graphs/*.graphml` | 62 world-city street networks (OSMnx-style GraphML) |
-| `DataSets/Results_Cities.csv` | Reference metrics and official UMRi/SMi/PTi scores for prediction and charts |
-
-GraphML filenames use the pattern `City,_Country.graphml` (underscores instead of spaces).
-
 ## Analysis modes
 
 | Mode | Speed | Use when |
@@ -219,7 +210,3 @@ See the in-app **Data Guide** tab for column-by-column explanations of the full 
 - Street network data: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright) (typically extracted via OSMnx into GraphML)
 - World Bank indicators: [Data360 API](https://data360.worldbank.org/)
 - UMRi reference scores: Oliver Wyman Forum (2023), via `Results_Cities.csv`
-
-## License
-
-No license file is included in this repository. Add one if you plan to distribute the project.
