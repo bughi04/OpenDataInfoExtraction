@@ -39,8 +39,8 @@ The application analyses two kinds of data, **both included in a single dataset 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/bughi04/ProcurementAnalysisApp.git
-cd ProcurementAnalysisApp
+git clone https://github.com/bughi04/OpenDataInfoExtraction.git
+cd OpenDataInfoExtraction
 ```
 
 ### 2. Download the dataset
