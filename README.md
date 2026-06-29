@@ -50,7 +50,7 @@ The GraphML networks and the reference CSV are **not bundled in the repository**
 
 **https://data.mendeley.com/datasets/gmyt9wrgst/1**
 
-After downloading and unzipping, place the files so the project root looks like this:
+Open the link above and click **Download All 462MB**. After downloading and unzipping, rename the folder with the files to **DataSets** and place the folder with the files so the project root looks like this:
 
 ```
 OpenDataInfoExtraction/
