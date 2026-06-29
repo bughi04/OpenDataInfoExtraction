@@ -53,7 +53,7 @@ The GraphML networks and the reference CSV are **not bundled in the repository**
 After downloading and unzipping, place the files so the project root looks like this:
 
 ```
-ProcurementAnalysisApp/
+OpenDataInfoExtraction/
 ├── pom.xml
 ├── DataSets/
 │   ├── Graphs/
